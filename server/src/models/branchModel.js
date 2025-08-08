@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { DeliveryPartner } from "./userModel";
 
 const branchSchema = new mongoose.Schema({
   name: {
