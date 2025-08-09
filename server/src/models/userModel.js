@@ -31,7 +31,7 @@ const customerSchema = new mongoose.Schema({
     required: [true, "Role is required"],
   },
   liveLocation: {
-    letitude: {
+    latitude: {
       type: Number,
       required: [true, "Latitude is required"],
     },
@@ -39,6 +39,10 @@ const customerSchema = new mongoose.Schema({
       type: Number,
       required: [true, "Longitude is required"],
     },
+  },
+  isActivated: {
+    type: Boolean,
+    default: true,
   },
 });
 
