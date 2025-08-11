@@ -27,7 +27,7 @@ export const loginCustomer = async (req, reply) => {
   }
 };
 
-const loginDeliveryPartner = async (req, reply) => {
+export const loginDeliveryPartner = async (req, reply) => {
   const { email, password } = req.body;
 
   try {
@@ -54,7 +54,7 @@ const loginDeliveryPartner = async (req, reply) => {
   }
 };
 
-const refreshToken = async (req, reply) => {
+export const refreshToken = async (req, reply) => {
   const { refreshToken } = req.body;
   if (!refreshToken) {
     return reply.status(400).send({ message: "Refresh token is required" });
@@ -85,7 +85,7 @@ const refreshToken = async (req, reply) => {
   }
 };
 
-const fecthUser = async (req, reply) => {
+export const fetchUser = async (req, reply) => {
   const { userId, role } = req.user;
 
   try {
