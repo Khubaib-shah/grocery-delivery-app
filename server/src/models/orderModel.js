@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Counter from "./counterModel";
+import Counter from "./counterModel.js";
 
 const orderSchema = new mongoose.Schema(
   {

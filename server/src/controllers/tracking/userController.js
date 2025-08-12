@@ -1,6 +1,6 @@
 import { Customer, DeliveryPartner } from "../../models/index.js";
 
-const updateUser = async (req, reply) => {
+export const updateUser = async (req, reply) => {
   try {
     const { userId } = req.params;
     const updateData = req.body;
